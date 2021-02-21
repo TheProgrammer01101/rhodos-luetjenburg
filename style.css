@@ -214,13 +214,13 @@ article.paragraph#willkommen {
 }
 
 article.paragraph#willkommen h1 {
-  font-size: 2rem;
+  font-size: 34px;
   padding: 1rem 0;
   color: #d0e8ff;
 }
 
 article.paragraph#willkommen p {
-  font-size: 1rem;
+  font-size: 18px;
 } article.paragraph#willkommen p a { color: #AFAF0D;}
 
 /* öffnungszeit-willkommen */
@@ -489,7 +489,13 @@ footer img {
       left: calc(var(--imgWidth) / 1.2 * -5);
     }
   }
+  article.paragraph#willkommen h1 {
+    font-size: 48px;
+  }
 
+  article.paragraph#willkommen p {
+    font-size: 21px;
+  }
   /* kontakt-query */
   .content.grid#kontakt {
     grid-template-columns: 1fr 1fr;
