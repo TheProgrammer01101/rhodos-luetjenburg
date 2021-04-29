@@ -1,20 +1,20 @@
-@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Merriweather&display=swap");
 * {
-  margin: 0; 
-  padding: 0; 
+  margin: 0;
+  padding: 0;
 }
 
 :root {
   --imgWidth: 1290px;
-  --imgHeight: 726px; 
+  --imgHeight: 726px;
 }
 @font-face {
-  font-family: 'PR Hydra';
-  src: url('PR Hydra.ttf') format('trueType');
+  font-family: "PR Hydra";
+  src: url("PR Hydra.ttf") format("trueType");
 }
 /* Animations */
 @keyframes slider {
-	0% {
+  0% {
     left: 0;
   }
   20% {
@@ -60,24 +60,24 @@
 }
 
 .wrapper {
-  background: linear-gradient(to bottom,#0D5EAF,#000248);
+  background: linear-gradient(to bottom, #0d5eaf, #000248);
   min-height: 100vh;
-  font-family: 'Merriweather', serif;
+  font-family: "Merriweather", serif;
 }
 .wrapper.light {
-  background: linear-gradient(to bottom,#0D5EAF,#2F8FF0);
+  background: linear-gradient(to bottom, #0d5eaf, #2f8ff0);
 }
 
 .paragraph span {
-  border-bottom: #AFAF0D 1px solid;
+  border-bottom: #afaf0d 1px solid;
 }
 
-#preload{
+#preload {
   text-align: center;
   position: relative;
   display: none;
   margin: 1rem;
-} 
+}
 #preload img {
   width: 15rem;
   transform: rotate(-20deg);
@@ -85,17 +85,19 @@
 }
 #preload h1 {
   font-size: 1rem;
-  transform: translate(0,-150px);
+  transform: translate(0, -150px);
 }
 nav {
-  background: linear-gradient(to right,#0D5EAF 10%,#000248 150%);
+  background: linear-gradient(to right, #0d5eaf 10%, #000248 150%);
   min-height: 5vh;
-} nav.transparent {
+}
+nav.transparent {
   background: transparent;
 }
 nav .menu-btn {
   padding: 2.5vh;
-} nav .menu-btn .line {
+}
+nav .menu-btn .line {
   background-color: #fff;
   width: 20px;
   height: 3px;
@@ -107,13 +109,15 @@ nav .links {
   display: none;
   justify-content: flex-end;
   list-style: none;
-} nav .links a {
+}
+nav .links a {
   color: #fff;
   text-decoration: none;
   padding: -40rem;
   margin: 4rem 2rem;
-} nav .links a.active {
-  border-bottom: 3px solid #AFAF0D;
+}
+nav .links a.active {
+  border-bottom: 3px solid #afaf0d;
 }
 
 /* menu-window */
@@ -124,7 +128,7 @@ nav .links {
   top: 0;
   right: 0;
   left: 0;
-  background: linear-gradient(to bottom,#0D5EAF, #2F8FF0); 
+  background: linear-gradient(to bottom, #0d5eaf, #2f8ff0);
   transition: all 0.7s;
   transform: translate(-100vw, 0);
 }
@@ -147,13 +151,16 @@ nav .links {
   list-style: none;
   text-align: center;
 }
-.menu-window .links a {text-decoration: none; color: #fff;}
+.menu-window .links a {
+  text-decoration: none;
+  color: #fff;
+}
 .menu-window .links li {
   padding: 2rem;
   font-size: 1.5rem;
 }
 .menu-window .links .line-link {
-  background-color: #AFAF0D;
+  background-color: #afaf0d;
   height: 3px;
   width: 50px;
   margin: auto;
@@ -182,7 +189,7 @@ header#willkommen #overlay-text {
   background-color: rgba(255, 255, 255, 0.2);
   -webkit-text-stroke: 0.5px #000000;
   margin: auto;
-  font-family: 'PR Hydra'; 
+  font-family: "PR Hydra";
   text-align: center;
   width: 80%;
   padding: 4vw 5vw;
@@ -196,8 +203,8 @@ header#willkommen .slider {
 header#willkommen .slider .slider-content {
   position: relative;
   display: flex;
-	margin: 0;
-	left: 0;
+  margin: 0;
+  left: 0;
   animation: 30s slider infinite;
 }
 
@@ -221,7 +228,10 @@ article.paragraph#willkommen h1 {
 
 article.paragraph#willkommen p {
   font-size: 18px;
-} article.paragraph#willkommen p a { color: #AFAF0D;}
+}
+article.paragraph#willkommen p a {
+  color: #afaf0d;
+}
 
 /* öffnungszeit-willkommen */
 #öffnungszeit {
@@ -237,10 +247,10 @@ article.paragraph#willkommen p {
   text-align: center;
   padding: 2rem;
   padding-bottom: 0.5rem;
-} #öffnungszeit #clock svg {
+}
+#öffnungszeit #clock svg {
   width: 10rem;
 }
-
 
 #öffnungszeit #time-table {
   display: flex;
@@ -259,8 +269,6 @@ article.paragraph#willkommen p {
   grid-template-columns: 1fr 1fr;
   margin: auto;
 }
-
-
 
 /***** KONTAKT *****/
 /*  content-grid#kontakt */
@@ -298,11 +306,21 @@ section#kontakt {
   grid-area: kontakt;
   width: 80%;
   margin: auto;
-} 
+}
 section#kontakt .btn {
   display: flex;
   align-items: center;
-} section#kontakt a.btn{color: #fff; }  section#kontakt .btn img {width: 1.5rem; padding:5px; margin: 0.5rem; background-color: #AFAF0D; border-radius: 5px;}
+}
+section#kontakt a.btn {
+  color: #fff;
+}
+section#kontakt .btn img {
+  width: 1.5rem;
+  padding: 5px;
+  margin: 0.5rem;
+  background-color: #afaf0d;
+  border-radius: 5px;
+}
 #map {
   display: none;
   position: relative;
@@ -383,7 +401,7 @@ article.paragraph#speisekarte {
   touch-action: manipulation;
   position: relative;
   bottom: 5px;
-  background: linear-gradient(to top,#2F8FF0 10%,#0D5EAF 150%);
+  background: linear-gradient(to top, #2f8ff0 10%, #0d5eaf 150%);
   border-radius: 0 0 10px 10px;
 }
 
@@ -417,7 +435,6 @@ header#impressum p {
   display: inline-block;
   text-align: left;
   margin: 9rem 0;
-
 }
 
 /***** FOOTER *****/
@@ -436,7 +453,7 @@ footer img {
 }
 
 /* Media Queries Big Screens */
-@media screen and (min-width:1117px) {
+@media screen and (min-width: 1117px) {
   .menu-window img.logo {
     width: 30vw;
   }
@@ -500,20 +517,27 @@ footer img {
   .content.grid#kontakt {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 0.5fr 1fr 0.5fr;
-    grid-template-areas: "header header"
-    "paragraph map"
-    "kontakt kontakt";
+    grid-template-areas:
+      "header header"
+      "paragraph map"
+      "kontakt kontakt";
   }
   header#kontakt {
     margin-bottom: 8vh;
-  } header#kontakt img {
+  }
+  header#kontakt img {
     width: 10vw;
-  } header#kontakt h1 {
+  }
+  header#kontakt h1 {
     font-size: 2vw;
   }
   section#kontakt {
     width: 90%;
-  } section#kontakt .btn img {width: 2rem;  padding: 0.8rem;}
+  }
+  section#kontakt .btn img {
+    width: 2rem;
+    padding: 0.8rem;
+  }
   article.paragraph#kontakt {
     font-size: 1.5vw;
     line-height: 2vw;
@@ -522,18 +546,20 @@ footer img {
   /* speisekarte-query */
   header#speisekarte {
     margin-bottom: 8vh;
-  } header#speisekarte img {
+  }
+  header#speisekarte img {
     width: 10vw;
-  } header#speisekarte h1 {
+  }
+  header#speisekarte h1 {
     font-size: 2vw;
   }
   section#speisekarte {
     width: 90%;
   }
-    article.paragraph#speisekarte {
-      font-size: 1.5vw;
-      line-height: 3vw;
-    }
+  article.paragraph#speisekarte {
+    font-size: 1.5vw;
+    line-height: 3vw;
+  }
   /* .speisekarte-btn {
     width: 20rem;
     height: 5rem;
@@ -543,7 +569,8 @@ footer img {
     font-size: 2rem;
   } */
 
-  .menu, .menu .real-menu .img-item img {
+  .menu,
+  .menu .real-menu .img-item img {
     width: 35vw;
   }
 
@@ -564,17 +591,18 @@ footer img {
   }
   #preload h1 {
     font-size: 2rem;
-    transform: translate(0,-250px);
+    transform: translate(0, -250px);
   }
 
   footer {
     font-size: 2rem;
-  }footer img {
+  }
+  footer img {
     width: 15rem;
   }
 }
 
-@media screen and (min-width:2230px) {
+@media screen and (min-width: 2230px) {
   header#willkommen .slider {
     width: var(--imgWidth);
     height: var(--imgHeight);
@@ -622,5 +650,5 @@ footer img {
   display: block !important;
 }
 #preload.active {
-  display: block !important; 
+  display: block !important;
 }
