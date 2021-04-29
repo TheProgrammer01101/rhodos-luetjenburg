@@ -183,13 +183,15 @@ header#willkommen #overlay-text {
   position: absolute;
   z-index: 1;
   top: 10vw;
-  font-size: 8vw;
+  font-size: 5vw;
   right: 0;
   left: 0;
   background-color: rgba(255, 255, 255, 0.2);
-  -webkit-text-stroke: 0.5px #000000;
+  -webkit-text-stroke: 0.3px #000000;
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px);
   margin: auto;
-  font-family: "PR Hydra";
+  /* font-family: "PR Hydra"; */
   text-align: center;
   width: 80%;
   padding: 4vw 5vw;
@@ -228,6 +230,7 @@ article.paragraph#willkommen h1 {
 
 article.paragraph#willkommen p {
   font-size: 18px;
+  line-height: 2.2rem;
 }
 article.paragraph#willkommen p a {
   color: #afaf0d;
@@ -470,7 +473,7 @@ footer img {
   }
 
   header#willkommen #overlay-text {
-    font-size: 4rem;
+    font-size: 3.5rem;
     width: 40rem;
     top: 10rem;
   }
