@@ -17,20 +17,23 @@
   0% {
     left: 0;
   }
-  20% {
+  14% {
     left: -100vw;
   }
-  40% {
+  28% {
     left: calc(-100vw * 2);
   }
-  60% {
+  42% {
     left: calc(-100vw * 3);
   }
-  80% {
+  56% {
     left: calc(-100vw * 4);
   }
-  90% {
+  70% {
     left: calc(-100vw * 5);
+  }
+  84% {
+    left: calc(-100vw * 6);
   }
 }
 
@@ -207,7 +210,8 @@ header#willkommen .slider .slider-content {
   display: flex;
   margin: 0;
   left: 0;
-  animation: 30s slider infinite;
+  animation: 60s slider infinite;
+  animation-delay: 0.8s;
 }
 
 header#willkommen .slider .slider-content img {
@@ -493,20 +497,23 @@ footer img {
     0% {
       left: 0;
     }
-    20% {
+    14% {
       left: calc(var(--imgWidth) / 1.2 * -1);
     }
-    40% {
+    28% {
       left: calc(var(--imgWidth) / 1.2 * -2);
     }
-    60% {
+    42% {
       left: calc(var(--imgWidth) / 1.2 * -3);
     }
-    80% {
+    56% {
       left: calc(var(--imgWidth) / 1.2 * -4);
     }
-    90% {
+    70% {
       left: calc(var(--imgWidth) / 1.2 * -5);
+    }
+    84% {
+      left: calc(var(--imgWidth) / 1.2 * -6);
     }
   }
   article.paragraph#willkommen h1 {
@@ -621,20 +628,23 @@ footer img {
     0% {
       left: 0;
     }
-    20% {
+    14% {
       left: calc(var(--imgWidth) * -1);
     }
-    40% {
+    28% {
       left: calc(var(--imgWidth) * -2);
     }
-    60% {
+    42% {
       left: calc(var(--imgWidth) * -3);
     }
-    80% {
+    56% {
       left: calc(var(--imgWidth) * -4);
     }
-    90% {
+    70% {
       left: calc(var(--imgWidth) * -5);
+    }
+    84% {
+      left: calc(var(--imgWidth) * -6);
     }
   }
 }
