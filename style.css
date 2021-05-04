@@ -183,18 +183,19 @@ header#willkommen {
 }
 
 header#willkommen #overlay-text {
+  cursor: default;
   position: absolute;
   z-index: 1;
   top: 10vw;
-  font-size: 5vw;
+  font-size: 6vw;
   right: 0;
   left: 0;
   background-color: rgba(255, 255, 255, 0.2);
   -webkit-text-stroke: 0.3px #000000;
-  backdrop-filter: blur(3px);
-  -webkit-backdrop-filter: blur(3px);
+  /* backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px); */
   margin: auto;
-  /* font-family: "PR Hydra"; */
+  font-family: "PR Hydra";
   text-align: center;
   width: 80%;
   padding: 4vw 5vw;
