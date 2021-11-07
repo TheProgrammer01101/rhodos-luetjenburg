@@ -20,9 +20,10 @@
   right: 0;
   bottom: 0;
   z-index: 3;
-  width: 50%;
-  font-size: 1.5rem;
+  width: 100%;
+  font-size: 1rem;
 }
+
 /* Animations */
 @keyframes slider {
   0% {
@@ -625,6 +626,9 @@ footer img {
 }
 
 @media screen and (min-width: 2230px) {
+  #info {
+    font-size: 2rem;
+  }
   header#willkommen .slider {
     width: var(--imgWidth);
     height: var(--imgHeight);
