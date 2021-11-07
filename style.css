@@ -12,6 +12,17 @@
   font-family: "PR Hydra";
   src: url("PR Hydra.ttf") format("trueType");
 }
+
+/* INFO */
+#info {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 3;
+  width: 50%;
+  font-size: 1.5rem;
+}
 /* Animations */
 @keyframes slider {
   0% {
