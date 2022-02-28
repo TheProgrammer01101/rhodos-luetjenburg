@@ -447,17 +447,36 @@ header#impressum p {
 
 /***** FOOTER *****/
 footer {
-  padding: 2rem 1rem;
-  /* margin-top: 20vh; */
+  padding: 1rem 1rem;
+  margin-top: 10vh;
   background-color: rgb(13, 94, 175, 0.5);
   text-align: center;
   color: #fff;
-  font-size: 1.5rem;
   grid-area: footer;
+  font-size: 2rem;
 }
-
-footer img {
-  width: 10rem;
+footer img{
+  width: 15rem;
+}
+footer #footer-pages {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 1rem;
+  font-size: 1rem;
+} footer #footer-pages a {
+  color: #fff;
+  text-decoration: none;
+  padding: 1rem;
+  text-align: center;
+  font-size: 14px;
+} footer #footer-pages a:hover {
+  color: #afaf0d;
+}
+footer h6 {
+  cursor: default;
+  padding: 1rem;
+  font-size: 12px;
 }
 
 /* Media Queries Big Screens */
@@ -665,4 +684,38 @@ footer img {
 }
 #preload.active {
   display: block !important;
+}
+
+/* Datenschutz */
+#datenschutz.content {
+  margin: 5rem auto;
+  font-family: 'Arial';
+  line-height: 1.5;
+  width: 80%;
+  word-wrap: break-word;;
+}
+#datenschutz ul {
+  list-style: none;
+}
+#datenschutz a {
+  color: #afaf0d;
+  cursor: pointer;
+  text-decoration: none;
+}
+#datenschutz .title {
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 1.5;
+} #datenschutz .title:not(:last-child), .subtitle:not(:last-child) {
+  margin-bottom: 1.5rem;
+} #datenschutz .title.is-2 {
+  font-size: 2.5rem;
+} #datenschutz .title.is-3 {
+  font-size: 2rem;
+} #datenschutz .title.is-4 {
+  font-size: 1.5rem;
+} #datenschutz .title.is-5 {
+  font-size: 1.25rem;
+} #datenschutz .title.mt-5 {
+  margin-top: 1.5rem !important;
 }
