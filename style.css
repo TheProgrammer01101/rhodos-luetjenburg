@@ -76,7 +76,7 @@
 }
 
 .paragraph span {
-  border-bottom: #afaf0d 1px solid;
+  border-bottom: #f4bf87 1px solid;
 }
 
 #preload {
@@ -124,7 +124,7 @@ nav .links a {
   margin: 4rem 2rem;
 }
 nav .links a.active {
-  border-bottom: 3px solid #afaf0d;
+  border-bottom: 3px solid #f4bf87;
 }
 
 /* menu-window */
@@ -167,7 +167,7 @@ nav .links a.active {
   font-size: 1.5rem;
 }
 .menu-window .links .line-link {
-  background-color: #afaf0d;
+  background-color: #f4bf87;
   height: 3px;
   width: 50px;
   margin: auto;
@@ -242,7 +242,7 @@ article.paragraph#willkommen p {
   line-height: 2.2rem;
 }
 article.paragraph#willkommen p a {
-  color: #afaf0d;
+  color: #f4bf87;
 }
 
 /* öffnungszeit-willkommen */
@@ -296,7 +296,7 @@ article.paragraph#willkommen p a {
 header#kontakt {
   grid-area: header;
   width: 80%;
-  margin: auto;
+  margin: 3rem auto;
   text-align: center;
 }
 header#kontakt img {
@@ -330,17 +330,37 @@ section#kontakt .btn img {
   width: 1.5rem;
   padding: 5px;
   margin: 0.5rem;
-  background-color: #afaf0d;
+  background-color: #f4bf87;
   border-radius: 5px;
 }
-#map {
-  display: none;
+#box-map {
+  display: block;
   position: relative;
   grid-area: map;
   width: 80%;
   margin: auto;
+  background-color: #0d5eaf;
+  border-radius: 2rem;
   height: 30vh;
-  margin-bottom: 2rem;
+}
+#box-map a {
+  color: #f4bf87;
+  text-decoration: none;
+}
+#box-map img {
+  width: 3rem;
+  display: block;
+  margin: auto;
+  padding: 1rem;
+}
+
+#box-map #consent-check {
+  padding: 0 0 0 1rem;
+}
+
+#iframe-map {
+  width: 100%;
+  height: 100%;
   border-radius: 2rem;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
@@ -475,7 +495,7 @@ footer #footer-pages {
   text-align: center;
   font-size: 14px;
 } footer #footer-pages a:hover {
-  color: #afaf0d;
+  color: #f4bf87;
 }
 footer h6 {
   cursor: default;
@@ -619,12 +639,12 @@ footer h6 {
 
   /* preload-query */
   #preload img {
-    width: 25rem;
+    width: 26rem;
     transform: rotate(-20deg);
     animation: rotate-img 8s infinite;
   }
   #preload h1 {
-    font-size: 2rem;
+    font-size: 1.5rem;
     transform: translate(0, -250px);
   }
 
@@ -702,7 +722,7 @@ footer h6 {
   list-style: none;
 }
 #datenschutz a {
-  color: #afaf0d;
+  color: #f4bf87;
   cursor: pointer;
   text-decoration: none;
 }

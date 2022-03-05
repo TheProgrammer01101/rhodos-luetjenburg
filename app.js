@@ -1,19 +1,35 @@
 const menuWindow = document.querySelector('.menu-window');
 const buttons = document.querySelectorAll('.menu-btn, .close-btn');
 
-
-
 const speisekarte = document.querySelector('.real-menu');
-const karte = document.querySelector('#map');
+
+const boxMap = document.querySelector('#box-map');
+const consentCheck = document.body.querySelector("#consent-check");
+
 const preload = document.querySelector('#preload');
 
 window.addEventListener('load', ()=> {
   if(speisekarte) {
     speisekarte.classList.add('active');
   }
-  if(karte) {
-    karte.classList.add('active');
-  }
+  else if(boxMap) {
+    const inputCheck = consentCheck.querySelector("input")
+    consentCheck.querySelector("span").addEventListener("click",()=> {
+        if (confirm(`Drücken Sie zur Bestätigung "OK".`) == true) {
+          let ifrm = document.createElement("iframe");
+          ifrm.setAttribute("src", "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d4657.414056341554!2d10.586365173532068!3d54.29144756943931!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x39781fe7ce9c2748!2sRESTAURANT%20RHODOS!5e0!3m2!1sen!2sde!4v1646517152852!5m2!1sen!2sde");
+          ifrm.style.width = "600";
+          ifrm.style.height = "450";
+          ifrm.style.border = 0;
+          ifrm.id = "iframe-map";
+          boxMap.appendChild(ifrm);
+          inputCheck.checked = true;
+          consentCheck.style.display = "none";
+        } else {
+          inputCheck.checked = false;
+        }
+      })
+    }
   preload.classList.remove('active');
 });
 
