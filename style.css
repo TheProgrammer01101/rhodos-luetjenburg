@@ -80,19 +80,21 @@
 }
 
 #preload {
-  text-align: center;
   position: relative;
   display: none;
-  margin: 1rem;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 #preload img {
   width: 15rem;
-  transform: rotate(-20deg);
   animation: rotate-img 8s infinite;
 }
 #preload h1 {
+  cursor: default;
   font-size: 1rem;
-  transform: translate(0, -150px);
+  z-index: 1;
+  position: absolute;
 }
 nav {
   background: linear-gradient(to right, #0d5eaf 10%, #000248 150%);
@@ -333,32 +335,48 @@ section#kontakt .btn img {
   background-color: #f4bf87;
   border-radius: 5px;
 }
+
 #box-map {
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   position: relative;
   grid-area: map;
   width: 80%;
   margin: auto;
   background-color: #0d5eaf;
   border-radius: 2rem;
-  height: 30vh;
+  height: 100%;
 }
-#box-map a {
+
+#box-map #preload {
+  position: absolute;
+  margin: 1rem;
+}
+#box-map #preload img {
+  width: 10rem;
+}
+
+#box-map #preload h1 {
+  font-size: 1rem;
+}
+
+#box-map #consent-check {
+  padding: 0 0 1.5rem 1rem;
+}
+
+#box-map #consent-check a {
   color: #f4bf87;
   text-decoration: none;
 }
-#box-map img {
+#box-map #consent-check img.map-icon {
   width: 3rem;
   display: block;
   margin: auto;
   padding: 1rem;
 }
 
-#box-map #consent-check {
-  padding: 0 0 0 1rem;
-}
-
-#iframe-map {
+#iframe-map.active {
   width: 100%;
   height: 100%;
   border-radius: 2rem;
@@ -614,14 +632,6 @@ footer h6 {
     font-size: 1.5vw;
     line-height: 3vw;
   }
-  /* .speisekarte-btn {
-    width: 20rem;
-    height: 5rem;
-  } .speisekarte-btn img {
-    width: 4rem;
-  } .speisekarte-btn a {
-    font-size: 2rem;
-  } */
 
   .menu,
   .menu .real-menu .img-item img {
@@ -639,13 +649,10 @@ footer h6 {
 
   /* preload-query */
   #preload img {
-    width: 26rem;
-    transform: rotate(-20deg);
-    animation: rotate-img 8s infinite;
+    width: 25rem;
   }
   #preload h1 {
     font-size: 1.5rem;
-    transform: translate(0, -250px);
   }
 
   footer {
@@ -707,7 +714,7 @@ footer h6 {
   display: block !important;
 }
 #preload.active {
-  display: block !important;
+  display: flex !important;
 }
 
 /* Datenschutz */
