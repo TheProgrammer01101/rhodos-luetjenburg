@@ -88,6 +88,7 @@
 }
 #preload img {
   width: 15rem;
+  transform: rotate(-20deg);
   animation: rotate-img 8s infinite;
 }
 #preload h1 {
@@ -289,7 +290,7 @@ article.paragraph#willkommen p a {
 .content.grid#kontakt {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 0.4fr 0.4fr 0.8fr 0.5fr;
+  grid-template-rows: 0.4fr 0.4fr 0.8fr 0.8fr;
   /* grid-row-gap: 3rem; */
   grid-template-areas: "header" "paragraph" "kontakt" "map";
 }
@@ -351,10 +352,9 @@ section#kontakt .btn img {
 
 #box-map #preload {
   position: absolute;
-  margin: 1rem;
 }
 #box-map #preload img {
-  width: 10rem;
+  width: 12rem;
 }
 
 #box-map #preload h1 {
@@ -652,6 +652,13 @@ footer h6 {
     width: 25rem;
   }
   #preload h1 {
+    font-size: 1.5rem;
+  }
+  #box-map #preload img {
+    width: 15rem;
+  }
+  
+  #box-map #preload h1 {
     font-size: 1.5rem;
   }
 
